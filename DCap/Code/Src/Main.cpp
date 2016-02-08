@@ -26,7 +26,6 @@ using namespace std;
 using namespace TwsApi;
 
 
-
 void * MktData(void* threadid)
 {
     MktDataProducer *mkt=new MktDataProducer;
@@ -40,8 +39,10 @@ void * Start_Strat1(void* threadid)
 }
 void InitSymNumbers()
 {
-    sym_of[100]="ITC";
-
+    sym_of[100]="ITC";    
+    sym_of[101]="INFY";
+    sym_of[102]="TATAMOTOR";
+    sym_of[103]="HDFCBANK";
 }
 //----------------------------------------------------------------------------
 // main
@@ -64,16 +65,15 @@ int main( int argc, const char* argv[] )
     }
         //print the shared structure
         //std::cout<<"Quotes DS frmo main:"<<std::endl;
-        for(int j=0;j<i;j++)
+        for(int j=0;j<2;j++)
         {
-            std::cout<<" "<<Quotes[j].sym<< " "<<Quotes[j].open <<" "<<Quotes[j].volume<<" \n" ;
+            std::cout<<"Heehahaha"<<std::endl;
+            //std::cout<<" "<<Quotes[j].sym<< " "<<Quotes[j].open <<" "<<Quotes[j].volume<<" \n" ;
         }
         //end of printing
 	Sleep(30);
         pthread_join(strat1_th,NULL);        
-        pthread_join(mktData_th,NULL);
-
-        
+        pthread_join(mktData_th,NULL);        
 }
 
 

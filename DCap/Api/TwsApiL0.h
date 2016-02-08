@@ -42,7 +42,7 @@ currently in use, this in symmetry with serverVersion().
 #define IB_USE_STD_STRING
 /**/
 #define IBString _IBString
-#include "../../source/PosixClient/Shared/IBString.h"
+#include "../../APIsource/PosixClient/Shared/IBString.h"
 #undef IBString
 
 struct IBString: public _IBString
@@ -56,15 +56,15 @@ struct IBString: public _IBString
 /**/
 
 // The other includes from shared
-#include "../../source/PosixClient/Shared/EWrapper.h"
-#include "../../source/PosixClient/Shared/EClient.h"
-#include "../../source/PosixClient/Shared/Contract.h"
-#include "../../source/PosixClient/Shared/Execution.h"
-#include "../../source/PosixClient/Shared/OrderState.h"					// includes order.h
-#include "../../source/PosixClient/Shared/ScannerSubscription.h"
-#include "../../source/PosixClient/Shared/CommissionReport.h"
+#include "../../APIsource/PosixClient/Shared/EWrapper.h"
+#include "../../APIsource/PosixClient/Shared/EClient.h"
+#include "../../APIsource/PosixClient/Shared/Contract.h"
+#include "../../APIsource/PosixClient/Shared/Execution.h"
+#include "../../APIsource/PosixClient/Shared/OrderState.h"					// includes order.h
+#include "../../APIsource/PosixClient/Shared/ScannerSubscription.h"
+#include "../../APIsource/PosixClient/Shared/CommissionReport.h"
 
-#include "../../source/PosixClient/Shared/TwsSocketClientErrors.h"
+#include "../../APIsource/PosixClient/Shared/TwsSocketClientErrors.h"
 
 // An extra error to indicate a thread couldn't start during eConnect when asked for
 static const CodeMsgPair COULD_NOT_START_THREAD( 700, "Couldn't start thread to read incomming messages." );

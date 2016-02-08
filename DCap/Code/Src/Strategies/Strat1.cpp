@@ -39,11 +39,12 @@ void Strat1::Start_Work()
     {
 
         pthread_mutex_lock(&printf_mutex);
-        for(int j=0;j<Quotes.size();j++)
+        for(int j=0;j<2;j++)
         {
             //since I am just reading, i will not acquire mutex
             //if required, in future, we will implement semaphore for reader-writer
-            std::cout<<" "<<Quotes[j].sym<< " "<<Quotes[j].open <<" "<<Quotes[j].volume<<" \n" ;
+            //std::cout<<" "<<Quotes[j].sym<< " "<<Quotes[j].open <<" "<<Quotes[j].volume<<" \n" ;
+            std::cout<<" bwaahh "<<std::endl;
         }
             pthread_mutex_unlock(&printf_mutex);
 

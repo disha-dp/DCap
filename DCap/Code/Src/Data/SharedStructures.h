@@ -13,12 +13,15 @@
 #ifndef SHAREDSTRUCTURES_H
 #define	SHAREDSTRUCTURES_H
 std::map<int,std::string> sym_of;
-struct trade_row{
-    long rNo;
-    std::string sym;
-    std::string date;
-    long vol;
-    double trd_prc;
+struct cumulative_row{
+    //std::string sym;
+    double open;
+    double high;
+    double low;
+    double close;
+    long volume;
+    long barCount;
+    double wap;
 };
     
 struct quote_row{
@@ -31,11 +34,12 @@ struct quote_row{
     double wap;
     int count;
     long rNo;
-    std::string sym;
+    //std::string sym;
     std::string date;
 };
-std::vector<trade_row> Trades; 
-    std::vector<quote_row> Quotes; 
+
+    std::map<std::string,cumulative_row> CumulativeData; 
+    std::map<std::string,quote_row> Quotes; 
 
 class SharedStructures {
     
