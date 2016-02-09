@@ -1,7 +1,7 @@
 # TwsApiC++ Debug Version
 
 CC      = gcc
-INCLUDE = -I../Api -I../../../source/PosixClient/Shared
+INCLUDE = -I../Api -I../APIsource/PosixClient/Shared
 CFLAGS  = -D_REENTRANT -D_DEBUG -ggdb -Wall
 LIBS    = -L../Api -lTwsApiL0D -lstdc++ -lpthread
 

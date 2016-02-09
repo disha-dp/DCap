@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="Api"
+                   displayName="Api"
+                   projectFiles="true"
+                   root="../../Downloads/TwsApiCpp-master/TwsApiC++/Api">
+      <itemPath>../../Downloads/TwsApiCpp-master/TwsApiC++/Api/TwsApiDefs.h</itemPath>
+      <itemPath>../../Downloads/TwsApiCpp-master/TwsApiC++/Api/TwsApiL0.h</itemPath>
+    </logicalFolder>
+    <df root="." name="0">
+      <df name="DCap">
+        <df name="Code">
+          <df name="Src">
+            <in>Main.cpp</in>
+          </df>
+        </df>
+        <df name="InheritedSrc">
+          <in>TwsApiL0.cpp</in>
+          <in>afxwin.h</in>
+        </df>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>DCap/Code/makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>DCap/Code/makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>DCap/Code</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f makefile</buildCommand>
+          <cleanCommand>${MAKE} -f makefile clean</cleanCommand>
+          <executablePath></executablePath>
+          <ccTool>
+            <incDir>
+              <pElem>../../Downloads/TwsApiCpp-master/source/PosixClient/Shared</pElem>
+              <pElem>/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1</pElem>
+            </incDir>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+      <item path="DCap/Code/Src/Main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DCap/InheritedSrc/TwsApiL0.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="DCap/InheritedSrc/afxwin.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
